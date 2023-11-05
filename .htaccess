@@ -1,0 +1,24 @@
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
+
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+ErrorDocument 400 https://mickschmidt.nl/errors/400
+ErrorDocument 401 https://mickschmidt.nl/errors/401
+ErrorDocument 403 https://mickschmidt.nl/errors/403
+ErrorDocument 404 https://mickschmidt.nl/errors/404
+ErrorDocument 500 https://mickschmidt.nl/errors/500
+ 
+Options All -Indexes
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301]
+
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
