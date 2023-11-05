@@ -1,7 +1,3 @@
-<?php
-session_start();
-require "php/viewup.php";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,16 +55,6 @@ window.onload = function() {
                     <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
                     <li><a href="/" style="pointer-events: none; cursor: default;"><i class="fa fa-eye"></i><span id="viewCount">Loading...</span></a></li>
                 </ul>
-                <script>
-                    fetch('php/views.php')
-                        .then(response => response.text())
-                        .then(data => {
-                            document.getElementById('viewCount').textContent = data;
-                        })
-                        .catch(error => {
-                            console.error('Fout bij het ophalen van views: ', error);
-                        });
-                </script>
                 <div class="copyright">
                     &copy; 2023 All Rights Reserved By Mick
                 </div>
